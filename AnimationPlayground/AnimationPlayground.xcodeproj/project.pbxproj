@@ -20,6 +20,7 @@
 		71CB5B772181A01000710AC1 /* starWarsIntroMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 71CB5B762181A01000710AC1 /* starWarsIntroMusic.mp3 */; };
 		71CB5B7A2181A31900710AC1 /* DetailViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB5B792181A31900710AC1 /* DetailViewControllerExtension.swift */; };
 		71F7ED912181899400B82E11 /* MovieOverviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F7ED902181899400B82E11 /* MovieOverviewCell.swift */; };
+		A1CDD0722182388A0098E780 /* TransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD0712182388A0098E780 /* TransitionAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		71CB5B762181A01000710AC1 /* starWarsIntroMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = starWarsIntroMusic.mp3; sourceTree = "<group>"; };
 		71CB5B792181A31900710AC1 /* DetailViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerExtension.swift; sourceTree = "<group>"; };
 		71F7ED902181899400B82E11 /* MovieOverviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieOverviewCell.swift; sourceTree = "<group>"; };
+		A1CDD0712182388A0098E780 /* TransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				7183F84B21817DB400EB0D27 /* LaunchScreen.storyboard */,
 				7183F84E21817DB400EB0D27 /* Info.plist */,
 				71F7ED902181899400B82E11 /* MovieOverviewCell.swift */,
+				A1CDD0712182388A0098E780 /* TransitionAnimator.swift */,
 			);
 			path = AnimationPlayground;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71F7ED912181899400B82E11 /* MovieOverviewCell.swift in Sources */,
+				A1CDD0722182388A0098E780 /* TransitionAnimator.swift in Sources */,
 				7183F87321817EDB00EB0D27 /* DataController.swift in Sources */,
 				71CB5B7A2181A31900710AC1 /* DetailViewControllerExtension.swift in Sources */,
 				7183F84521817DB100EB0D27 /* DetailViewController.swift in Sources */,
