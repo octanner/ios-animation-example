@@ -114,7 +114,13 @@ In a stunning move, the fiendish droid leader, General Grievous, has swept into 
                         <viewLayoutGuide key="safeArea" id="VUw-jc-0yf"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Detail" id="mOI-FS-AaM"/>
+                    <navigationItem key="navigationItem" title="Detail" id="mOI-FS-AaM">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="bdF-29-8ip">
+                            <connections>
+                                <action selector="donePressed:" destination="JEX-9P-axG" id="V9R-Wv-1BF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="backgroundView" destination="1Ha-tM-s0O" id="YHn-D7-HAU"/>
                         <outlet property="crawlLabel" destination="SCy-sZ-TFJ" id="pku-Cn-jco"/>
@@ -126,7 +132,7 @@ In a stunning move, the fiendish droid leader, General Grievous, has swept into 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="708" y="128.18590704647679"/>
+            <point key="canvasLocation" x="1647.2" y="128.18590704647679"/>
         </scene>
         <!--Master-->
         <scene sceneID="smW-Zh-WAh">
@@ -198,7 +204,6 @@ In a stunning move, the fiendish droid leader, General Grievous, has swept into 
                                     <outlet property="movieImageView" destination="rxD-81-e21" id="CwO-ZQ-5qP"/>
                                     <outlet property="titleLabel" destination="KsW-iM-JFJ" id="cI2-A1-Yvm"/>
                                     <outlet property="yearLabel" destination="3Cb-ng-aUa" id="tsw-Qo-3JN"/>
-                                    <segue destination="JEX-9P-axG" kind="show" id="l4G-xd-KV4"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -213,6 +218,24 @@ In a stunning move, the fiendish droid leader, General Grievous, has swept into 
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="708" y="-630.13493253373315"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AuZ-jO-epl">
+            <objects>
+                <navigationController storyboardIdentifier="DetailViewControllerNav" automaticallyAdjustsScrollViewInsets="NO" id="SB8-qm-lHy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mHu-80-IWU">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JEX-9P-axG" kind="relationship" relationship="rootViewController" id="teU-WX-KJ2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7uC-Qy-mTe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="708" y="128.18590704647679"/>
         </scene>
     </scenes>
 </document>

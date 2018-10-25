@@ -16,13 +16,29 @@ class MasterViewController: UITableViewController {
 
     // MARK: - Segues
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let controller = segue.destination as? DetailViewController, let indexPath = tableView.indexPathForSelectedRow else { return }
-        let movie = movies[indexPath.row]
-        controller.movie = movie
+    func present(_ movie: StarWarsMovie) {
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let detailId = String(describing: DetailViewController.self) + "Nav"
+        guard let detailNav = mainStoryboard.instantiateViewController(withIdentifier: detailId) as? UINavigationController, let detailVC = detailNav.viewControllers.first as? DetailViewController else { return }
+        detailNav.transitioningDelegate = self
+        detailVC.movie = movie
+        DispatchQueue.main.async {
+            self.present(detailNav, animated: true, completion: nil)
+        }
     }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        guard let detailNav = segue.destination as? UINavigationController, let detailVC = detailNav.viewControllers.first as? DetailViewController, let indexPath = tableView.indexPathForSelectedRow else { return }
+//        detailVC.transitioningDelegate = self
+//        let movie = movies[indexPath.row]
+//        detailVC.movie = movie
+//    }
+}
 
-    // MARK: - Table View
+
+// MARK: - Table View
+
+extension MasterViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -43,3 +59,25 @@ class MasterViewController: UITableViewController {
 
 }
 
+extension MasterViewController {
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let movie = movies[indexPath.row]
+        present(movie)
+    }
+    
+}
+
+
+extension MasterViewController: UIViewControllerTransitioningDelegate {
+    
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return TransitionAnimator(isPresenting: true)
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return nil
+//        return TransitionAnimator(isPresenting: false)
+    }
+    
+}

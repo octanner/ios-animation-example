@@ -30,7 +30,7 @@ class DetailViewController: UIViewController {
     internal var allAnimations = [UIViewPropertyAnimator]()
     internal var player: AVAudioPlayer!
     /// set this variable to false if the beauty is too much for you...
-    private let shouldDoDelightfulAnimations = true
+    private let shouldDoDelightfulAnimations = false
     var playButton: UIBarButtonItem!
     var pauseButton: UIBarButtonItem!
     var openButton: UIBarButtonItem!
@@ -50,6 +50,10 @@ class DetailViewController: UIViewController {
         }
     }
     
+    @IBAction func donePressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     
     // MARK: - Methods
     
@@ -62,6 +66,7 @@ class DetailViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         movieImageView.image = movie.image
         episodeLabel.text = "Episode \(movie.episodeNumber)"
         titleLabel.text = movie.title
