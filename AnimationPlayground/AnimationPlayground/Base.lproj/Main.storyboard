@@ -148,6 +148,7 @@ In a stunning move, the fiendish droid leader, General Grievous, has swept into 
                                             <rect key="frame" x="16" y="8" width="114.5" height="114.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="rxD-81-e21" secondAttribute="height" multiplier="1:1" id="Dns-uB-Gki"/>
+                                                <constraint firstAttribute="height" constant="114.5" id="kdI-pg-pd3"/>
                                             </constraints>
                                         </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="veV-4A-HPZ">
