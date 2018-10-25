@@ -19,6 +19,7 @@
 		7183F87321817EDB00EB0D27 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7183F87221817EDB00EB0D27 /* DataController.swift */; };
 		71CB5B772181A01000710AC1 /* starWarsIntroMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 71CB5B762181A01000710AC1 /* starWarsIntroMusic.mp3 */; };
 		71F7ED912181899400B82E11 /* MovieOverviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F7ED902181899400B82E11 /* MovieOverviewCell.swift */; };
+		B0FBA4BE218265CD00DB7EDD /* MovieCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FBA4BD218265CD00DB7EDD /* MovieCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		7183F87221817EDB00EB0D27 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		71CB5B762181A01000710AC1 /* starWarsIntroMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = starWarsIntroMusic.mp3; sourceTree = "<group>"; };
 		71F7ED902181899400B82E11 /* MovieOverviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieOverviewCell.swift; sourceTree = "<group>"; };
+		B0FBA4BD218265CD00DB7EDD /* MovieCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +114,12 @@
 				7183F84421817DB100EB0D27 /* DetailViewController.swift */,
 				7183F87021817E5800EB0D27 /* StarWarsMovie.swift */,
 				7183F87221817EDB00EB0D27 /* DataController.swift */,
+				71F7ED902181899400B82E11 /* MovieOverviewCell.swift */,
+				B0FBA4BD218265CD00DB7EDD /* MovieCollectionCell.swift */,
 				7183F84621817DB100EB0D27 /* Main.storyboard */,
 				71CB5B782181A01500710AC1 /* Assets */,
 				7183F84B21817DB400EB0D27 /* LaunchScreen.storyboard */,
 				7183F84E21817DB400EB0D27 /* Info.plist */,
-				71F7ED902181899400B82E11 /* MovieOverviewCell.swift */,
 			);
 			path = AnimationPlayground;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				71F7ED912181899400B82E11 /* MovieOverviewCell.swift in Sources */,
 				7183F87321817EDB00EB0D27 /* DataController.swift in Sources */,
 				7183F84521817DB100EB0D27 /* DetailViewController.swift in Sources */,
+				B0FBA4BE218265CD00DB7EDD /* MovieCollectionCell.swift in Sources */,
 				7183F87121817E5800EB0D27 /* StarWarsMovie.swift in Sources */,
 				7183F84321817DB100EB0D27 /* MasterViewController.swift in Sources */,
 				7183F84121817DB100EB0D27 /* AppDelegate.swift in Sources */,
