@@ -18,7 +18,6 @@
 		7183F87121817E5800EB0D27 /* StarWarsMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7183F87021817E5800EB0D27 /* StarWarsMovie.swift */; };
 		7183F87321817EDB00EB0D27 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7183F87221817EDB00EB0D27 /* DataController.swift */; };
 		71CB5B772181A01000710AC1 /* starWarsIntroMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 71CB5B762181A01000710AC1 /* starWarsIntroMusic.mp3 */; };
-		71CB5B7A2181A31900710AC1 /* DetailViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB5B792181A31900710AC1 /* DetailViewControllerExtension.swift */; };
 		71F7ED912181899400B82E11 /* MovieOverviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F7ED902181899400B82E11 /* MovieOverviewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +56,6 @@
 		7183F87021817E5800EB0D27 /* StarWarsMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsMovie.swift; sourceTree = "<group>"; };
 		7183F87221817EDB00EB0D27 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		71CB5B762181A01000710AC1 /* starWarsIntroMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = starWarsIntroMusic.mp3; sourceTree = "<group>"; };
-		71CB5B792181A31900710AC1 /* DetailViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerExtension.swift; sourceTree = "<group>"; };
 		71F7ED902181899400B82E11 /* MovieOverviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieOverviewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,7 +110,6 @@
 				7183F84021817DB100EB0D27 /* AppDelegate.swift */,
 				7183F84221817DB100EB0D27 /* MasterViewController.swift */,
 				7183F84421817DB100EB0D27 /* DetailViewController.swift */,
-				71CB5B792181A31900710AC1 /* DetailViewControllerExtension.swift */,
 				7183F87021817E5800EB0D27 /* StarWarsMovie.swift */,
 				7183F87221817EDB00EB0D27 /* DataController.swift */,
 				7183F84621817DB100EB0D27 /* Main.storyboard */,
@@ -285,7 +282,6 @@
 			files = (
 				71F7ED912181899400B82E11 /* MovieOverviewCell.swift in Sources */,
 				7183F87321817EDB00EB0D27 /* DataController.swift in Sources */,
-				71CB5B7A2181A31900710AC1 /* DetailViewControllerExtension.swift in Sources */,
 				7183F84521817DB100EB0D27 /* DetailViewController.swift in Sources */,
 				7183F87121817E5800EB0D27 /* StarWarsMovie.swift in Sources */,
 				7183F84321817DB100EB0D27 /* MasterViewController.swift in Sources */,
