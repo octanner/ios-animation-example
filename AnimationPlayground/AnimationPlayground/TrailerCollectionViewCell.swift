@@ -7,20 +7,28 @@
 //
 
 import UIKit
+import AVKit
 
 class TrailerCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var playerContainerView: UIView!
     
-    var image: UIImage?
+    var playerViewController: AVPlayerViewController!
     
-    func configure(with movie: StarWarsMovie) {
-        image = movie.image
-        imageView.image = movie.image
+    func configure(with movie: StarWarsMovie, playerViewController: AVPlayerViewController) {
+        titleLabel.text = movie.title
+        self.playerViewController = playerViewController
+        let player = AVPlayer(url: movie.trailerURL)
+        playerViewController.player = player
+        playerViewController.view.frame = playerContainerView.bounds
+        playerContainerView.addSubview(playerViewController.view)
     }
     
     override func prepareForReuse() {
-        self.imageView?.image = nil
+        playerViewController.willMove(toParent: nil)
+        playerContainerView.subviews.forEach({ $0.removeFromSuperview() })
+        playerViewController.removeFromParent()
         super.prepareForReuse()
     }
     

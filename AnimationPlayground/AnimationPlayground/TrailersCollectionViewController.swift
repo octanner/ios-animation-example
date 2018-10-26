@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVKit
 
 private let reuseIdentifier = "Cell"
 
@@ -50,7 +51,10 @@ class TrailersCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? TrailerCollectionViewCell else { return UICollectionViewCell() }
     
-        cell.configure(with: movies[indexPath.row])
+        let playerViewController = AVPlayerViewController()
+        addChild(playerViewController)
+        cell.configure(with: movies[indexPath.row], playerViewController: playerViewController)
+        playerViewController.didMove(toParent: self)
         
         return cell
     }
