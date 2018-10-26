@@ -46,9 +46,9 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xrl-Ip-evP">
-                                                <rect key="frame" x="79.5" y="45" width="216" height="216"/>
+                                                <rect key="frame" x="97.5" y="45" width="180" height="216"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Xrl-Ip-evP" secondAttribute="height" multiplier="1:1" id="5S4-Xj-6Nl"/>
+                                                    <constraint firstAttribute="width" secondItem="Xrl-Ip-evP" secondAttribute="height" multiplier="5:6" id="5S4-Xj-6Nl"/>
                                                     <constraint firstAttribute="height" constant="216" id="pJ5-XJ-qcQ"/>
                                                 </constraints>
                                             </imageView>
@@ -83,7 +83,6 @@ In a stunning move, the fiendish droid leader, General Grievous, has swept into 
                                             <constraint firstItem="gjQ-Gu-CsG" firstAttribute="centerX" secondItem="1Ha-tM-s0O" secondAttribute="centerX" id="6UN-nr-oiE"/>
                                             <constraint firstItem="tbU-sO-bNg" firstAttribute="centerX" secondItem="1Ha-tM-s0O" secondAttribute="centerX" id="99n-0v-2Sb"/>
                                             <constraint firstItem="Xrl-Ip-evP" firstAttribute="centerX" secondItem="1Ha-tM-s0O" secondAttribute="centerX" id="BAu-u7-Ivb"/>
-                                            <constraint firstItem="Xrl-Ip-evP" firstAttribute="width" secondItem="Xrl-Ip-evP" secondAttribute="height" multiplier="1:1" id="CPB-bN-iHC"/>
                                             <constraint firstAttribute="trailing" secondItem="SCy-sZ-TFJ" secondAttribute="trailing" constant="8" id="Cxw-8w-lj6"/>
                                             <constraint firstItem="rxW-Sd-e2s" firstAttribute="top" secondItem="tbU-sO-bNg" secondAttribute="bottom" constant="8" id="Dps-1T-FRo"/>
                                             <constraint firstItem="gjQ-Gu-CsG" firstAttribute="top" secondItem="1Ha-tM-s0O" secondAttribute="top" constant="16" id="P1G-XQ-cdK"/>
@@ -154,26 +153,26 @@ In a stunning move, the fiendish droid leader, General Grievous, has swept into 
                                             <rect key="frame" x="16" y="11" width="343" height="109"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rxD-81-e21">
-                                                    <rect key="frame" x="0.0" y="4.5" width="80" height="100"/>
+                                                    <rect key="frame" x="0.0" y="4.5" width="83.5" height="100"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="rxD-81-e21" secondAttribute="height" multiplier="4:5" id="Dns-uB-Gki"/>
+                                                        <constraint firstAttribute="width" secondItem="rxD-81-e21" secondAttribute="height" multiplier="5:6" id="Dns-uB-Gki"/>
                                                         <constraint firstAttribute="height" constant="100" id="beo-dJ-QRj"/>
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="veV-4A-HPZ">
-                                                    <rect key="frame" x="104" y="15.5" width="239" height="78"/>
+                                                    <rect key="frame" x="107.5" y="15.5" width="235.5" height="78"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="vB2-Bq-nge">
-                                                            <rect key="frame" x="0.0" y="0.0" width="239" height="52"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="235.5" height="52"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Episode: 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fpc-4s-TSj">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="239" height="24"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="235.5" height="24"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A new Hope" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KsW-iM-JFJ">
-                                                                    <rect key="frame" x="0.0" y="28" width="239" height="24"/>
+                                                                    <rect key="frame" x="0.0" y="28" width="235.5" height="24"/>
                                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -181,7 +180,7 @@ In a stunning move, the fiendish droid leader, General Grievous, has swept into 
                                                             </subviews>
                                                         </stackView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1999" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Cb-ng-aUa">
-                                                            <rect key="frame" x="0.0" y="60" width="239" height="18"/>
+                                                            <rect key="frame" x="0.0" y="60" width="235.5" height="18"/>
                                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>

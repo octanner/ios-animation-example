@@ -80,13 +80,29 @@ extension MasterViewController: UIViewControllerTransitioningDelegate {
     
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         transitionAnimator.isPresenting = true
-        let selectedCell = tableView.cellForRow(at: tableView.indexPathForSelectedRow!)!
-        transitionAnimator.originFrame = self.view.convert(selectedCell.frame, to: nil)
+        let selectedCell = tableView.cellForRow(at: tableView.indexPathForSelectedRow!)! as! MovieOverviewCell
+        transitionAnimator.originFrame = view.convert(selectedCell.frame, to: nil)
+        transitionAnimator.fromImageFrame = view.convert(selectedCell.movieImageView.frame, to: nil)
+        let presentedDetailVC = (presented as! UINavigationController).viewControllers.first as! DetailViewController
+        presentedDetailVC.loadViewIfNeeded()
+        transitionAnimator.movieImageView = presentedDetailVC.movieImageView
+//        presentedDetailVC.movieImageView.alpha = 0
+        transitionAnimator.toImageFrame = view.convert(presentedDetailVC.movieImageView.frame, to: nil)
+        transitionAnimator.presentingCompletion = {
+//            presentedDetailVC.movieImageView.alpha = 1
+        }
         return transitionAnimator
     }
     
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        let selectedCell = tableView.cellForRow(at: tableView.indexPathForSelectedRow!) as! MovieOverviewCell
+        selectedCell.movieImageView?.alpha = 0
+        let detailVC = (dismissed as! UINavigationController).viewControllers.first as! DetailViewController
+        transitionAnimator.movieImageView = detailVC.movieImageView
         transitionAnimator.isPresenting = false
+        transitionAnimator.dismissCompletion = {
+            selectedCell.movieImageView.alpha = 1
+        }
         return transitionAnimator
     }
     
