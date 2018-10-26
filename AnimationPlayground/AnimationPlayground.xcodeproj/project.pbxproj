@@ -54,7 +54,6 @@
 		A1CDD0C9218396EB0098E780 /* HeroDefaultAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD097218396EB0098E780 /* HeroDefaultAnimator.swift */; };
 		A1CDD0CA218396EB0098E780 /* HeroAnimatorViewContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD098218396EB0098E780 /* HeroAnimatorViewContext.swift */; };
 		A1CDD0CB218396EB0098E780 /* HeroViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD099218396EB0098E780 /* HeroViewControllerDelegate.swift */; };
-		A1CDD0CC218396EB0098E780 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1CDD09A218396EB0098E780 /* Info.plist */; };
 		A1CDD0CD218396EB0098E780 /* HeroModifier+Advanced.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD09B218396EB0098E780 /* HeroModifier+Advanced.swift */; };
 		A1CDD0CE218396EB0098E780 /* Lexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD09D218396EB0098E780 /* Lexer.swift */; };
 		A1CDD0CF218396EB0098E780 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD09E218396EB0098E780 /* Regex.swift */; };
@@ -143,7 +142,6 @@
 		A1CDD097218396EB0098E780 /* HeroDefaultAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroDefaultAnimator.swift; sourceTree = "<group>"; };
 		A1CDD098218396EB0098E780 /* HeroAnimatorViewContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroAnimatorViewContext.swift; sourceTree = "<group>"; };
 		A1CDD099218396EB0098E780 /* HeroViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroViewControllerDelegate.swift; sourceTree = "<group>"; };
-		A1CDD09A218396EB0098E780 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1CDD09B218396EB0098E780 /* HeroModifier+Advanced.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HeroModifier+Advanced.swift"; sourceTree = "<group>"; };
 		A1CDD09D218396EB0098E780 /* Lexer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lexer.swift; sourceTree = "<group>"; };
 		A1CDD09E218396EB0098E780 /* Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
@@ -268,7 +266,6 @@
 				A1CDD090218396EA0098E780 /* HeroTargetState.swift */,
 				A1CDD08F218396EA0098E780 /* HeroTypes.swift */,
 				A1CDD099218396EB0098E780 /* HeroViewControllerDelegate.swift */,
-				A1CDD09A218396EB0098E780 /* Info.plist */,
 				A1CDD09C218396EB0098E780 /* Parser */,
 				A1CDD0A2218396EB0098E780 /* Preprocessors */,
 				A1CDD0AA218396EB0098E780 /* SwiftSupport.swift */,
@@ -463,7 +460,6 @@
 				7183F84D21817DB400EB0D27 /* LaunchScreen.storyboard in Resources */,
 				71CB5B772181A01000710AC1 /* starWarsIntroMusic.mp3 in Resources */,
 				7183F84A21817DB400EB0D27 /* Assets.xcassets in Resources */,
-				A1CDD0CC218396EB0098E780 /* Info.plist in Resources */,
 				7183F84821817DB100EB0D27 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -221,6 +221,7 @@ In a stunning move, the fiendish droid leader, General Grievous, has swept into 
         <!--Navigation Controller-->
         <scene sceneID="AuZ-jO-epl">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7uC-Qy-mTe" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController storyboardIdentifier="DetailViewControllerNav" automaticallyAdjustsScrollViewInsets="NO" id="SB8-qm-lHy" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mHu-80-IWU">
@@ -232,7 +233,6 @@ In a stunning move, the fiendish droid leader, General Grievous, has swept into 
                         <segue destination="JEX-9P-axG" kind="relationship" relationship="rootViewController" id="teU-WX-KJ2"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7uC-Qy-mTe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="708" y="128.18590704647679"/>
         </scene>

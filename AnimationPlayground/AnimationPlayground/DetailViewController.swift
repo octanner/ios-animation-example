@@ -58,6 +58,9 @@ class DetailViewController: UIViewController {
     // MARK: - Methods
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+        hero.isEnabled = true
+        movieImageView.hero.id = "movieImage"
         pauseButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.pause, target: self, action: #selector(pausePlayTapped(_:)))
         playButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.play, target: self, action: #selector(pausePlayTapped(_:)))
         openButton = UIBarButtonItem(title: "Open", style: .plain, target: self, action: #selector(openMovieUrl))

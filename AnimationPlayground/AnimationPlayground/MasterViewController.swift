@@ -14,32 +14,28 @@ class MasterViewController: UITableViewController {
     let movies = DataController.shared.starWarsMovies
     let transitionAnimator = TransitionAnimator()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        transitionAnimator.dismissCompletion = {
-            print("Complete!")
-        }
-    }
-
-    // MARK: - Segues
-
-    func present(_ movie: StarWarsMovie) {
+    fileprivate func present(_ movie: StarWarsMovie) {
         let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let detailId = String(describing: DetailViewController.self) + "Nav"
         guard let detailNav = mainStoryboard.instantiateViewController(withIdentifier: detailId) as? UINavigationController, let detailVC = detailNav.viewControllers.first as? DetailViewController else { return }
-        detailNav.transitioningDelegate = self
+        detailNav.hero.isEnabled = true
+        detailVC.hero.isEnabled = true
+        detailVC.hero.modalAnimationType = HeroDefaultAnimationType.fade
         detailVC.movie = movie
+        detailVC.loadViewIfNeeded()
+        detailVC.movieImageView.hero.id = imageId(for: movie)
+        detailVC.titleLabel.hero.id = movie.title
+        detailVC.episodeLabel.hero.id = String(movie.episodeNumber)
+        detailVC.yearLabel.hero.id = String(movie.releaseYear)
         DispatchQueue.main.async {
             self.present(detailNav, animated: true, completion: nil)
         }
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        guard let detailNav = segue.destination as? UINavigationController, let detailVC = detailNav.viewControllers.first as? DetailViewController, let indexPath = tableView.indexPathForSelectedRow else { return }
-//        detailVC.transitioningDelegate = self
-//        let movie = movies[indexPath.row]
-//        detailVC.movie = movie
-//    }
+    fileprivate func imageId(for movie: StarWarsMovie) -> String {
+        return "starWarsMovieImage\(movie.episodeNumber)"
+    }
+    
 }
 
 
@@ -60,7 +56,10 @@ extension MasterViewController {
 
         let movie = movies[indexPath.row]
         cell.configure(with: movie)
-        
+        cell.movieImageView.hero.id = imageId(for: movie)
+        cell.titleLabel.hero.id = movie.title
+        cell.episodeLabel.hero.id = String(movie.episodeNumber)
+        cell.yearLabel.hero.id = String(movie.releaseYear)
         return cell
     }
 
@@ -71,39 +70,6 @@ extension MasterViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let movie = movies[indexPath.row]
         present(movie)
-    }
-    
-}
-
-
-extension MasterViewController: UIViewControllerTransitioningDelegate {
-    
-    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        transitionAnimator.isPresenting = true
-        let selectedCell = tableView.cellForRow(at: tableView.indexPathForSelectedRow!)! as! MovieOverviewCell
-        transitionAnimator.originFrame = view.convert(selectedCell.frame, to: nil)
-        transitionAnimator.fromImageFrame = view.convert(selectedCell.movieImageView.frame, to: nil)
-        let presentedDetailVC = (presented as! UINavigationController).viewControllers.first as! DetailViewController
-        presentedDetailVC.loadViewIfNeeded()
-        transitionAnimator.movieImageView = presentedDetailVC.movieImageView
-//        presentedDetailVC.movieImageView.alpha = 0
-        transitionAnimator.toImageFrame = view.convert(presentedDetailVC.movieImageView.frame, to: nil)
-        transitionAnimator.presentingCompletion = {
-//            presentedDetailVC.movieImageView.alpha = 1
-        }
-        return transitionAnimator
-    }
-    
-    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        let selectedCell = tableView.cellForRow(at: tableView.indexPathForSelectedRow!) as! MovieOverviewCell
-        selectedCell.movieImageView?.alpha = 0
-        let detailVC = (dismissed as! UINavigationController).viewControllers.first as! DetailViewController
-        transitionAnimator.movieImageView = detailVC.movieImageView
-        transitionAnimator.isPresenting = false
-        transitionAnimator.dismissCompletion = {
-            selectedCell.movieImageView.alpha = 1
-        }
-        return transitionAnimator
     }
     
 }
