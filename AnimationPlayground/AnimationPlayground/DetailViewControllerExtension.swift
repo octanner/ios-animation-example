@@ -26,10 +26,10 @@ extension DetailViewController {
         setupCrawlAnimation()
         setTheMood(after: reasonableDelay)
         
-        animateHide(view: titleLabel, afterDelay: reasonableDelay + 1)
-        animateHide(view: episodeLabel, afterDelay: reasonableDelay + 1)
-        animateHide(view: movieImageView, afterDelay: reasonableDelay + 8, withDuration: 6)
-        animateHide(view: yearLabel, afterDelay: reasonableDelay + 1)
+        animateHide(view: titleLabel, afterDelay: reasonableDelay + 2)
+        animateHide(view: episodeLabel, afterDelay: reasonableDelay + 2)
+        animateHide(view: movieImageView, afterDelay: reasonableDelay + 6, withDuration: 6)
+        animateHide(view: yearLabel, afterDelay: reasonableDelay + 2)
     }
     
     internal func cancelAnimations() {
@@ -49,7 +49,6 @@ extension DetailViewController {
         crawlAnimation.addCompletion { _ in
             self.resetView(originY: originY)
         }
-        crawlAnimation.startAnimation(afterDelay: reasonableDelay)
     }
     
     private func setTheMood(after delay: TimeInterval) {
@@ -58,14 +57,15 @@ extension DetailViewController {
         themeColorAnimation.addAnimations {
             self.backgroundView.backgroundColor = .black
             self.view.backgroundColor = .black
+            // hide nav bar for immersive experience.
+            self.navigationController?.setNavigationBarHidden(true, animated: true)
+            self.view.layoutIfNeeded()
         }
         themeColorAnimation.startAnimation(afterDelay: delay)
-        
+
         DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
             guard let `self` = self, self.crawlAnimation.state == .active else { return }
-            // hide nav bar for immersive experience.
-            self.navigationController?.setNavigationBarHidden(true, animated: false)
-            // also set the pause button
+            // set the pause button
             self.navigationItem.setRightBarButton(self.pauseButton, animated: true)
             // set the mood immersively
             self.playMusic()
@@ -73,20 +73,21 @@ extension DetailViewController {
             self.animateLabels()
         }
 
+        self.crawlAnimation.startAnimation(afterDelay: delay + 2)
     }
 
     func animateLabels() {
         // apparently you cant annimate textColor, so we just have to delay changing it till the background changes.
-        UIView.transition(with: titleLabel, duration: 2, options: .transitionCrossDissolve, animations: {
+        UIView.transition(with: titleLabel, duration: 1, options: .transitionCrossDissolve, animations: {
             self.titleLabel.textColor = .yellow
         }, completion: nil)
-        UIView.transition(with: episodeLabel, duration: 2, options: .transitionCrossDissolve, animations: {
+        UIView.transition(with: episodeLabel, duration: 1, options: .transitionCrossDissolve, animations: {
             self.episodeLabel.textColor = .yellow
         }, completion: nil)
-        UIView.transition(with: yearLabel, duration: 2, options: .transitionCrossDissolve, animations: {
+        UIView.transition(with: yearLabel, duration: 1, options: .transitionCrossDissolve, animations: {
             self.yearLabel.textColor = .yellow
         }, completion: nil)
-        UIView.transition(with: crawlLabel, duration: 2, options: .transitionCrossDissolve, animations: {
+        UIView.transition(with: crawlLabel, duration: 1, options: .transitionCrossDissolve, animations: {
             self.crawlLabel.textColor = .yellow
         }, completion: nil)
     }

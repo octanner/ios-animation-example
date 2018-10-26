@@ -86,10 +86,13 @@ class DetailViewController: UIViewController {
     @objc func userTapped() {
         guard let navController = self.navigationController else { return }
         if navController.isNavigationBarHidden {
-            navController.setNavigationBarHidden(false, animated: false)
+            navController.setNavigationBarHidden(false, animated: true)
         } else {
-            navController.setNavigationBarHidden(true, animated: false)
+            navController.setNavigationBarHidden(true, animated: true)
         }
+        UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.5, delay: 0, options: [], animations: {
+            self.view.layoutIfNeeded()
+        }, completion: nil)
     }
 }
 

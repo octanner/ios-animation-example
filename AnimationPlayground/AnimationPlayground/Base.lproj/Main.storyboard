@@ -34,10 +34,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bmw-5H-EZi">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="33" width="414" height="863"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ha-tM-s0O">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1357"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Ha-tM-s0O">
+                                        <rect key="frame" x="0.0" y="-55" width="414" height="1412"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Episode 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbU-sO-bNg">
                                                 <rect key="frame" x="166" y="642" width="82" height="24"/>
@@ -106,13 +106,14 @@ In a stunning move, the fiendish droid leader, General Grievous, has swept into 
                                     <constraint firstItem="1Ha-tM-s0O" firstAttribute="width" secondItem="bmw-5H-EZi" secondAttribute="width" id="5IH-GC-a37"/>
                                     <constraint firstItem="1Ha-tM-s0O" firstAttribute="top" secondItem="bmw-5H-EZi" secondAttribute="top" id="EZO-ru-8fT"/>
                                     <constraint firstAttribute="trailing" secondItem="1Ha-tM-s0O" secondAttribute="trailing" id="JzY-Go-rze"/>
+                                    <constraint firstItem="1Ha-tM-s0O" firstAttribute="top" secondItem="bmw-5H-EZi" secondAttribute="top" id="bbx-z4-mIw"/>
                                     <constraint firstItem="1Ha-tM-s0O" firstAttribute="leading" secondItem="bmw-5H-EZi" secondAttribute="leading" id="ldT-oh-xt0"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="bmw-5H-EZi" firstAttribute="top" secondItem="VUw-jc-0yf" secondAttribute="top" id="6it-s0-T1Z"/>
+                            <constraint firstItem="bmw-5H-EZi" firstAttribute="top" secondItem="svH-Pt-448" secondAttribute="top" constant="33" id="A42-ji-Zx0"/>
                             <constraint firstItem="VUw-jc-0yf" firstAttribute="trailing" secondItem="bmw-5H-EZi" secondAttribute="trailing" id="Pka-6z-2Pu"/>
                             <constraint firstItem="bmw-5H-EZi" firstAttribute="leading" secondItem="VUw-jc-0yf" secondAttribute="leading" id="Sih-Xk-YHK"/>
                             <constraint firstAttribute="bottom" secondItem="bmw-5H-EZi" secondAttribute="bottom" id="YoK-19-7lI"/>
