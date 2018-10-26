@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoPlayerViewController" customModule="AnimationPlayground" customModuleProvider="target">
+            <connections>
+                <outlet property="episodeLabel" destination="uhg-ZN-AnP" id="OQV-Rq-4it"/>
+                <outlet property="titleLabel" destination="KEQ-nv-oB1" id="8aK-wF-qjT"/>
+                <outlet property="videoPlayerView" destination="baa-Wh-GGE" id="YB5-Xh-Xga"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="yearLabel" destination="Lh4-wq-tLp" id="9Gh-qs-fda"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="baa-Wh-GGE" userLabel="videoPlayerView">
+                    <rect key="frame" x="0.0" y="20" width="375" height="267"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HPh-cN-v0y">
+                    <rect key="frame" x="0.0" y="469.5" width="375" height="133.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YXa-hY-YNY">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="77.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Episode 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhg-ZN-AnP">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The empire strikes back" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KEQ-nv-oB1">
+                                    <rect key="frame" x="0.0" y="28.5" width="375" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1980" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lh4-wq-tLp">
+                                    <rect key="frame" x="0.0" y="57" width="375" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8e-Fp-CT4">
+                            <rect key="frame" x="0.0" y="97.5" width="375" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="View In Itunes"/>
+                            <connections>
+                                <action selector="openItunesTapped:" destination="-1" eventType="touchUpInside" id="caf-em-vdL"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="baa-Wh-GGE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="1d1-qz-GbB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="HPh-cN-v0y" secondAttribute="bottom" priority="750" constant="64" id="CTM-NI-Hjc"/>
+                <constraint firstItem="baa-Wh-GGE" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.4" id="Fpt-6I-IXX"/>
+                <constraint firstItem="HPh-cN-v0y" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Fyt-44-Hma"/>
+                <constraint firstItem="HPh-cN-v0y" firstAttribute="top" relation="greaterThanOrEqual" secondItem="baa-Wh-GGE" secondAttribute="bottom" constant="32" id="Tla-6t-Wmw"/>
+                <constraint firstItem="baa-Wh-GGE" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="UBX-DJ-Hkt"/>
+                <constraint firstItem="baa-Wh-GGE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="VZO-8y-OeX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HPh-cN-v0y" secondAttribute="trailing" id="zus-8R-kLx"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-74.400000000000006" y="152.47376311844079"/>
+        </view>
+    </objects>
+</document>

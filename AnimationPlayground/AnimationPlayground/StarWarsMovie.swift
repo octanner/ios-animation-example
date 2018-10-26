@@ -15,4 +15,15 @@ struct StarWarsMovie {
     let episodeNumber: Int
     let openingCrawlText: String
     let itunesURL: URL
+    let trailerURL: URL
+    
+    init(title: String, image: UIImage, releaseYear: Int, episodeNumber: Int, openingCrawlText: String, itunesURL: URL, trailerURLString: String) {
+        self.title = title
+        self.image = image
+        self.releaseYear = releaseYear
+        self.episodeNumber = episodeNumber
+        self.openingCrawlText = openingCrawlText
+        self.itunesURL = itunesURL
+        self.trailerURL = Bundle.main.url(forResource: trailerURLString, withExtension: "mp4")!
+    }
 }

@@ -19,6 +19,17 @@
 		7183F87321817EDB00EB0D27 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7183F87221817EDB00EB0D27 /* DataController.swift */; };
 		71CB5B772181A01000710AC1 /* starWarsIntroMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 71CB5B762181A01000710AC1 /* starWarsIntroMusic.mp3 */; };
 		71CB5B7A2181A31900710AC1 /* DetailViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB5B792181A31900710AC1 /* DetailViewControllerExtension.swift */; };
+		71CB5B7C218269C800710AC1 /* TrailersCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB5B7B218269C800710AC1 /* TrailersCollectionViewController.swift */; };
+		71CB5B7F21826A9300710AC1 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB5B7D21826A9300710AC1 /* VideoPlayerViewController.swift */; };
+		71CB5B8021826A9300710AC1 /* VideoPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71CB5B7E21826A9300710AC1 /* VideoPlayerViewController.xib */; };
+		71CB5B862182CB2F00710AC1 /* TrailerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB5B842182CB2F00710AC1 /* TrailerCollectionViewCell.swift */; };
+		71CB5B872182CB2F00710AC1 /* TrailerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71CB5B852182CB2F00710AC1 /* TrailerCollectionViewCell.xib */; };
+		71CB5B882182D39600710AC1 /* phantomMenaceTrailer.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 71CB5B812182C2DA00710AC1 /* phantomMenaceTrailer.mp4 */; };
+		71CB5B8E2182D52E00710AC1 /* aNewHopeTrailer.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 71CB5B892182D52A00710AC1 /* aNewHopeTrailer.mp4 */; };
+		71CB5B8F2182D52E00710AC1 /* empireStrikesBackTrailer.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 71CB5B8A2182D52B00710AC1 /* empireStrikesBackTrailer.mp4 */; };
+		71CB5B902182D52E00710AC1 /* returnOfTheJediTrailer.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 71CB5B8B2182D52C00710AC1 /* returnOfTheJediTrailer.mp4 */; };
+		71CB5B912182D52E00710AC1 /* attackOfTheClonesTrailer.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 71CB5B8C2182D52D00710AC1 /* attackOfTheClonesTrailer.mp4 */; };
+		71CB5B922182D52E00710AC1 /* revengeOfTheSithTrailer.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 71CB5B8D2182D52E00710AC1 /* revengeOfTheSithTrailer.mp4 */; };
 		71F7ED912181899400B82E11 /* MovieOverviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F7ED902181899400B82E11 /* MovieOverviewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +69,17 @@
 		7183F87221817EDB00EB0D27 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		71CB5B762181A01000710AC1 /* starWarsIntroMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = starWarsIntroMusic.mp3; sourceTree = "<group>"; };
 		71CB5B792181A31900710AC1 /* DetailViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerExtension.swift; sourceTree = "<group>"; };
+		71CB5B7B218269C800710AC1 /* TrailersCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailersCollectionViewController.swift; sourceTree = "<group>"; };
+		71CB5B7D21826A9300710AC1 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		71CB5B7E21826A9300710AC1 /* VideoPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoPlayerViewController.xib; sourceTree = "<group>"; };
+		71CB5B812182C2DA00710AC1 /* phantomMenaceTrailer.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = phantomMenaceTrailer.mp4; sourceTree = "<group>"; };
+		71CB5B842182CB2F00710AC1 /* TrailerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerCollectionViewCell.swift; sourceTree = "<group>"; };
+		71CB5B852182CB2F00710AC1 /* TrailerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrailerCollectionViewCell.xib; sourceTree = "<group>"; };
+		71CB5B892182D52A00710AC1 /* aNewHopeTrailer.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = aNewHopeTrailer.mp4; sourceTree = "<group>"; };
+		71CB5B8A2182D52B00710AC1 /* empireStrikesBackTrailer.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = empireStrikesBackTrailer.mp4; sourceTree = "<group>"; };
+		71CB5B8B2182D52C00710AC1 /* returnOfTheJediTrailer.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = returnOfTheJediTrailer.mp4; sourceTree = "<group>"; };
+		71CB5B8C2182D52D00710AC1 /* attackOfTheClonesTrailer.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = attackOfTheClonesTrailer.mp4; sourceTree = "<group>"; };
+		71CB5B8D2182D52E00710AC1 /* revengeOfTheSithTrailer.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = revengeOfTheSithTrailer.mp4; sourceTree = "<group>"; };
 		71F7ED902181899400B82E11 /* MovieOverviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieOverviewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +134,11 @@
 				7183F84021817DB100EB0D27 /* AppDelegate.swift */,
 				7183F84221817DB100EB0D27 /* MasterViewController.swift */,
 				7183F84421817DB100EB0D27 /* DetailViewController.swift */,
+				71CB5B7B218269C800710AC1 /* TrailersCollectionViewController.swift */,
+				71CB5B842182CB2F00710AC1 /* TrailerCollectionViewCell.swift */,
+				71CB5B852182CB2F00710AC1 /* TrailerCollectionViewCell.xib */,
+				71CB5B7D21826A9300710AC1 /* VideoPlayerViewController.swift */,
+				71CB5B7E21826A9300710AC1 /* VideoPlayerViewController.xib */,
 				71CB5B792181A31900710AC1 /* DetailViewControllerExtension.swift */,
 				7183F87021817E5800EB0D27 /* StarWarsMovie.swift */,
 				7183F87221817EDB00EB0D27 /* DataController.swift */,
@@ -147,8 +174,22 @@
 			children = (
 				7183F84921817DB400EB0D27 /* Assets.xcassets */,
 				71CB5B762181A01000710AC1 /* starWarsIntroMusic.mp3 */,
+				71CB5B932182D53800710AC1 /* Videos */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		71CB5B932182D53800710AC1 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				71CB5B812182C2DA00710AC1 /* phantomMenaceTrailer.mp4 */,
+				71CB5B8C2182D52D00710AC1 /* attackOfTheClonesTrailer.mp4 */,
+				71CB5B8D2182D52E00710AC1 /* revengeOfTheSithTrailer.mp4 */,
+				71CB5B892182D52A00710AC1 /* aNewHopeTrailer.mp4 */,
+				71CB5B8A2182D52B00710AC1 /* empireStrikesBackTrailer.mp4 */,
+				71CB5B8B2182D52C00710AC1 /* returnOfTheJediTrailer.mp4 */,
+			);
+			path = Videos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +298,15 @@
 			files = (
 				7183F84D21817DB400EB0D27 /* LaunchScreen.storyboard in Resources */,
 				71CB5B772181A01000710AC1 /* starWarsIntroMusic.mp3 in Resources */,
+				71CB5B8E2182D52E00710AC1 /* aNewHopeTrailer.mp4 in Resources */,
+				71CB5B902182D52E00710AC1 /* returnOfTheJediTrailer.mp4 in Resources */,
+				71CB5B8021826A9300710AC1 /* VideoPlayerViewController.xib in Resources */,
+				71CB5B882182D39600710AC1 /* phantomMenaceTrailer.mp4 in Resources */,
 				7183F84A21817DB400EB0D27 /* Assets.xcassets in Resources */,
+				71CB5B922182D52E00710AC1 /* revengeOfTheSithTrailer.mp4 in Resources */,
+				71CB5B8F2182D52E00710AC1 /* empireStrikesBackTrailer.mp4 in Resources */,
+				71CB5B872182CB2F00710AC1 /* TrailerCollectionViewCell.xib in Resources */,
+				71CB5B912182D52E00710AC1 /* attackOfTheClonesTrailer.mp4 in Resources */,
 				7183F84821817DB100EB0D27 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +334,9 @@
 			files = (
 				71F7ED912181899400B82E11 /* MovieOverviewCell.swift in Sources */,
 				7183F87321817EDB00EB0D27 /* DataController.swift in Sources */,
+				71CB5B862182CB2F00710AC1 /* TrailerCollectionViewCell.swift in Sources */,
+				71CB5B7C218269C800710AC1 /* TrailersCollectionViewController.swift in Sources */,
+				71CB5B7F21826A9300710AC1 /* VideoPlayerViewController.swift in Sources */,
 				71CB5B7A2181A31900710AC1 /* DetailViewControllerExtension.swift in Sources */,
 				7183F84521817DB100EB0D27 /* DetailViewController.swift in Sources */,
 				7183F87121817E5800EB0D27 /* StarWarsMovie.swift in Sources */,
