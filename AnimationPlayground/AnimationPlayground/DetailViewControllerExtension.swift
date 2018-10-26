@@ -27,9 +27,9 @@ extension DetailViewController {
         setTheMood(after: reasonableDelay)
         
         animateHide(view: titleLabel, afterDelay: reasonableDelay + 1)
-        animateHide(view: episodeLabel, afterDelay: reasonableDelay + 4)
+        animateHide(view: episodeLabel, afterDelay: reasonableDelay + 1)
         animateHide(view: movieImageView, afterDelay: reasonableDelay + 8, withDuration: 6)
-        animateHide(view: yearLabel, afterDelay: reasonableDelay + 28)
+        animateHide(view: yearLabel, afterDelay: reasonableDelay + 1)
     }
     
     internal func cancelAnimations() {
@@ -59,28 +59,36 @@ extension DetailViewController {
             self.backgroundView.backgroundColor = .black
             self.view.backgroundColor = .black
         }
-        themeColorAnimation.startAnimation(afterDelay: reasonableDelay - 2)
+        themeColorAnimation.startAnimation(afterDelay: delay)
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + delay - 2) { [weak self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
             guard let `self` = self, self.crawlAnimation.state == .active else { return }
             // hide nav bar for immersive experience.
             self.navigationController?.setNavigationBarHidden(true, animated: false)
             // also set the pause button
             self.navigationItem.setRightBarButton(self.pauseButton, animated: true)
-
-        }
-        
-        // apparently you cant annimate textColor, so we just have to delay changing it till the background changes.
-        DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
-            guard let `self` = self, self.crawlAnimation.state == .active else { return }
-            self.titleLabel.textColor = .yellow
-            self.episodeLabel.textColor = .yellow
-            self.yearLabel.textColor = .yellow
-            self.crawlLabel.textColor = .yellow
             // set the mood immersively
             self.playMusic()
             self.hapticHurrah()
+            self.animateLabels()
         }
+
+    }
+
+    func animateLabels() {
+        // apparently you cant annimate textColor, so we just have to delay changing it till the background changes.
+        UIView.transition(with: titleLabel, duration: 2, options: .transitionCrossDissolve, animations: {
+            self.titleLabel.textColor = .yellow
+        }, completion: nil)
+        UIView.transition(with: episodeLabel, duration: 2, options: .transitionCrossDissolve, animations: {
+            self.episodeLabel.textColor = .yellow
+        }, completion: nil)
+        UIView.transition(with: yearLabel, duration: 2, options: .transitionCrossDissolve, animations: {
+            self.yearLabel.textColor = .yellow
+        }, completion: nil)
+        UIView.transition(with: crawlLabel, duration: 2, options: .transitionCrossDissolve, animations: {
+            self.crawlLabel.textColor = .yellow
+        }, completion: nil)
     }
     
     private func animateHide(view: UIView, afterDelay delay: TimeInterval, withDuration duration: TimeInterval = 2.0) {

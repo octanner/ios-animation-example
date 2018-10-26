@@ -12,7 +12,11 @@ class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
     let movies = DataController.shared.starWarsMovies
-    
+    var selectedCell: MovieOverviewCell?
+
+    override func viewDidLoad() {
+        navigationController?.delegate = self
+    }
 
     // MARK: - Segues
 
@@ -43,3 +47,31 @@ class MasterViewController: UITableViewController {
 
 }
 
+
+// MARK: - Tableview Delegate
+
+extension MasterViewController {
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedCell = tableView.cellForRow(at: indexPath) as? MovieOverviewCell
+    }
+
+}
+
+
+// MARK: - Navigation controller delegate
+
+extension MasterViewController: UINavigationControllerDelegate {
+
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        switch operation {
+        case .push:
+            return TransitionAnimator(transitionType: .presenting)
+        case .pop:
+            return TransitionAnimator(transitionType: .dismissing)
+        case .none:
+            return nil
+        }
+    }
+
+}

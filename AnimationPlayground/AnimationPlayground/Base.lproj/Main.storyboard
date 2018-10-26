@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RMx-3f-FxP">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,7 +14,7 @@
             <objects>
                 <navigationController title="Master" id="RMx-3f-FxP" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Pmd-2v-anx">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -30,42 +30,35 @@
             <objects>
                 <viewController title="Detail" id="JEX-9P-axG" customClass="DetailViewController" customModule="AnimationPlayground" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="svH-Pt-448">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bmw-5H-EZi">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ha-tM-s0O">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1050"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1357"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Episode 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbU-sO-bNg">
-                                                <rect key="frame" x="151" y="285" width="73" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Episode 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbU-sO-bNg">
+                                                <rect key="frame" x="166" y="642" width="82" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xrl-Ip-evP">
-                                                <rect key="frame" x="79.5" y="45" width="216" height="216"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="episode1" translatesAutoresizingMaskIntoConstraints="NO" id="Xrl-Ip-evP">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="618"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Xrl-Ip-evP" secondAttribute="height" multiplier="1:1" id="5S4-Xj-6Nl"/>
-                                                    <constraint firstAttribute="height" constant="216" id="pJ5-XJ-qcQ"/>
+                                                    <constraint firstAttribute="width" secondItem="Xrl-Ip-evP" secondAttribute="height" multiplier="140:209" id="EkT-1h-FCH"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A new hope" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxW-Sd-e2s">
-                                                <rect key="frame" x="142" y="314" width="91" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjQ-Gu-CsG">
-                                                <rect key="frame" x="168" y="16" width="39" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A new hope" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxW-Sd-e2s">
+                                                <rect key="frame" x="152" y="674" width="110" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCy-sZ-TFJ">
-                                                <rect key="frame" x="8" y="382" width="359" height="660"/>
+                                                <rect key="frame" x="8" y="742" width="398" height="607"/>
                                                 <string key="text">War! The Republic is crumbling under attacks by the ruthless Sith Lord, Count Dooku. There are heroes on both sides. Evil is everywhere.
 
 In a stunning move, the fiendish droid leader, General Grievous, has swept into the Republic capital and kidnapped Chancellor Palpatine, leader of the Galactic Senate. As the Separatist Droid Army attempts to flee the besieged capital with their valuable hostage, two Jedi Knights lead a desperate mission to rescue the captive Chancellor....
@@ -75,23 +68,36 @@ In a stunning move, the fiendish droid leader, General Grievous, has swept into 
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjQ-Gu-CsG">
+                                                <rect key="frame" x="189.5" y="706" width="35" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="SCy-sZ-TFJ" secondAttribute="bottom" constant="8" id="2PF-M6-AlA"/>
                                             <constraint firstItem="SCy-sZ-TFJ" firstAttribute="centerX" secondItem="1Ha-tM-s0O" secondAttribute="centerX" id="4hx-33-ji1"/>
-                                            <constraint firstItem="gjQ-Gu-CsG" firstAttribute="centerX" secondItem="1Ha-tM-s0O" secondAttribute="centerX" id="6UN-nr-oiE"/>
-                                            <constraint firstItem="tbU-sO-bNg" firstAttribute="centerX" secondItem="1Ha-tM-s0O" secondAttribute="centerX" id="99n-0v-2Sb"/>
+                                            <constraint firstAttribute="trailing" secondItem="Xrl-Ip-evP" secondAttribute="trailing" id="Avh-jH-6hW"/>
                                             <constraint firstItem="Xrl-Ip-evP" firstAttribute="centerX" secondItem="1Ha-tM-s0O" secondAttribute="centerX" id="BAu-u7-Ivb"/>
-                                            <constraint firstItem="Xrl-Ip-evP" firstAttribute="width" secondItem="Xrl-Ip-evP" secondAttribute="height" multiplier="1:1" id="CPB-bN-iHC"/>
-                                            <constraint firstAttribute="trailing" secondItem="SCy-sZ-TFJ" secondAttribute="trailing" constant="8" id="Cxw-8w-lj6"/>
                                             <constraint firstItem="rxW-Sd-e2s" firstAttribute="top" secondItem="tbU-sO-bNg" secondAttribute="bottom" constant="8" id="Dps-1T-FRo"/>
-                                            <constraint firstItem="gjQ-Gu-CsG" firstAttribute="top" secondItem="1Ha-tM-s0O" secondAttribute="top" constant="16" id="P1G-XQ-cdK"/>
-                                            <constraint firstItem="Xrl-Ip-evP" firstAttribute="top" secondItem="gjQ-Gu-CsG" secondAttribute="bottom" constant="8" id="Sqz-cH-NUr"/>
-                                            <constraint firstItem="rxW-Sd-e2s" firstAttribute="centerX" secondItem="1Ha-tM-s0O" secondAttribute="centerX" id="ZoU-xq-9Cv"/>
-                                            <constraint firstItem="SCy-sZ-TFJ" firstAttribute="leading" secondItem="1Ha-tM-s0O" secondAttribute="leading" constant="8" id="ibV-TA-GhA"/>
-                                            <constraint firstItem="SCy-sZ-TFJ" firstAttribute="top" secondItem="rxW-Sd-e2s" secondAttribute="bottom" constant="47" id="kF0-4i-fmM"/>
+                                            <constraint firstAttribute="trailing" secondItem="SCy-sZ-TFJ" secondAttribute="trailing" constant="8" id="GYI-US-7v3"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gjQ-Gu-CsG" secondAttribute="trailing" constant="16" id="JdS-d8-Cco"/>
+                                            <constraint firstItem="Xrl-Ip-evP" firstAttribute="top" secondItem="1Ha-tM-s0O" secondAttribute="top" id="Lra-m6-ElA"/>
+                                            <constraint firstItem="tbU-sO-bNg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1Ha-tM-s0O" secondAttribute="leading" constant="16" id="M7C-mB-ivu"/>
+                                            <constraint firstItem="Xrl-Ip-evP" firstAttribute="leading" secondItem="1Ha-tM-s0O" secondAttribute="leading" id="MbG-yN-ofk"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tbU-sO-bNg" secondAttribute="trailing" constant="16" id="O47-dC-aJt"/>
+                                            <constraint firstItem="gjQ-Gu-CsG" firstAttribute="centerX" secondItem="1Ha-tM-s0O" secondAttribute="centerX" id="VGE-Zx-oXl"/>
+                                            <constraint firstItem="tbU-sO-bNg" firstAttribute="centerX" secondItem="1Ha-tM-s0O" secondAttribute="centerX" id="ZlJ-zU-IzR"/>
+                                            <constraint firstItem="SCy-sZ-TFJ" firstAttribute="top" secondItem="gjQ-Gu-CsG" secondAttribute="bottom" constant="18" id="cIa-li-Hwm"/>
+                                            <constraint firstItem="gjQ-Gu-CsG" firstAttribute="top" secondItem="rxW-Sd-e2s" secondAttribute="bottom" constant="8" id="dty-90-IzX"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rxW-Sd-e2s" secondAttribute="trailing" constant="16" id="fBz-xe-4wj"/>
+                                            <constraint firstItem="SCy-sZ-TFJ" firstAttribute="leading" secondItem="1Ha-tM-s0O" secondAttribute="leading" constant="8" id="izj-YE-O2S"/>
+                                            <constraint firstItem="gjQ-Gu-CsG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1Ha-tM-s0O" secondAttribute="leading" constant="16" id="kEh-So-Yx8"/>
+                                            <constraint firstItem="rxW-Sd-e2s" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1Ha-tM-s0O" secondAttribute="leading" constant="16" id="lDy-KK-KhO"/>
                                             <constraint firstItem="tbU-sO-bNg" firstAttribute="top" secondItem="Xrl-Ip-evP" secondAttribute="bottom" constant="24" id="tva-7T-xmP"/>
+                                            <constraint firstItem="rxW-Sd-e2s" firstAttribute="centerX" secondItem="1Ha-tM-s0O" secondAttribute="centerX" id="vzl-3C-ko3"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -109,7 +115,7 @@ In a stunning move, the fiendish droid leader, General Grievous, has swept into 
                             <constraint firstItem="bmw-5H-EZi" firstAttribute="top" secondItem="VUw-jc-0yf" secondAttribute="top" id="6it-s0-T1Z"/>
                             <constraint firstItem="VUw-jc-0yf" firstAttribute="trailing" secondItem="bmw-5H-EZi" secondAttribute="trailing" id="Pka-6z-2Pu"/>
                             <constraint firstItem="bmw-5H-EZi" firstAttribute="leading" secondItem="VUw-jc-0yf" secondAttribute="leading" id="Sih-Xk-YHK"/>
-                            <constraint firstItem="VUw-jc-0yf" firstAttribute="bottom" secondItem="bmw-5H-EZi" secondAttribute="bottom" id="Ssl-6r-Mib"/>
+                            <constraint firstAttribute="bottom" secondItem="bmw-5H-EZi" secondAttribute="bottom" id="YoK-19-7lI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VUw-jc-0yf"/>
                     </view>
@@ -126,22 +132,22 @@ In a stunning move, the fiendish droid leader, General Grievous, has swept into 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="708" y="128.18590704647679"/>
+            <point key="canvasLocation" x="707.24637681159425" y="127.90178571428571"/>
         </scene>
         <!--Master-->
         <scene sceneID="smW-Zh-WAh">
             <objects>
                 <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="7bK-jq-Zjz" customClass="MasterViewController" customModule="AnimationPlayground" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="r7i-6Z-zg0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="131" id="WCw-Qf-5nD" customClass="MovieOverviewCell" customModule="AnimationPlayground" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="131"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="131"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WCw-Qf-5nD" id="37f-cq-3Eg">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="130.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="130.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rxD-81-e21">
@@ -151,27 +157,22 @@ In a stunning move, the fiendish droid leader, General Grievous, has swept into 
                                             </constraints>
                                         </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="veV-4A-HPZ">
-                                            <rect key="frame" x="154.5" y="27" width="188.5" height="77"/>
+                                            <rect key="frame" x="154.5" y="27" width="113" height="77"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="vB2-Bq-nge">
-                                                    <rect key="frame" x="0.0" y="0.0" width="188.5" height="51"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Episode: 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fpc-4s-TSj">
-                                                            <rect key="frame" x="0.0" y="0.0" width="188.5" height="24"/>
-                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="A new Hope" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KsW-iM-JFJ">
-                                                            <rect key="frame" x="0.0" y="28" width="188.5" height="23"/>
-                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                </stackView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1999" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Cb-ng-aUa">
-                                                    <rect key="frame" x="0.0" y="59" width="188.5" height="18"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Episode: 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fpc-4s-TSj">
+                                                    <rect key="frame" x="0.0" y="0.0" width="113" height="19"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A new Hope" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KsW-iM-JFJ">
+                                                    <rect key="frame" x="0.0" y="27" width="113" height="24"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="1999" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Cb-ng-aUa">
+                                                    <rect key="frame" x="0.0" y="59" width="113" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -180,7 +181,7 @@ In a stunning move, the fiendish droid leader, General Grievous, has swept into 
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="veV-4A-HPZ" secondAttribute="trailing" constant="16" id="3ES-oI-nbV"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="veV-4A-HPZ" secondAttribute="trailing" constant="16" id="3ES-oI-nbV"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="veV-4A-HPZ" secondAttribute="bottom" constant="16" id="AH9-3W-AwE"/>
                                         <constraint firstItem="rxD-81-e21" firstAttribute="top" secondItem="37f-cq-3Eg" secondAttribute="top" constant="8" id="KZ1-hM-XP3"/>
                                         <constraint firstItem="veV-4A-HPZ" firstAttribute="top" secondItem="37f-cq-3Eg" secondAttribute="topMargin" constant="16" id="hUa-YI-Jp6"/>
@@ -189,7 +190,7 @@ In a stunning move, the fiendish droid leader, General Grievous, has swept into 
                                         <constraint firstAttribute="bottom" secondItem="rxD-81-e21" secondAttribute="bottom" constant="8" id="zHu-4P-DVU"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="episodeLabel" destination="Fpc-4s-TSj" id="bfl-ju-Rxw"/>
                                     <outlet property="movieImageView" destination="rxD-81-e21" id="CwO-ZQ-5qP"/>
@@ -212,4 +213,7 @@ In a stunning move, the fiendish droid leader, General Grievous, has swept into 
             <point key="canvasLocation" x="708" y="-630.13493253373315"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="episode1" width="140" height="209"/>
+    </resources>
 </document>

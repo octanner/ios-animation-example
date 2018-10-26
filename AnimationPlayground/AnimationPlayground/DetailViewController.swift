@@ -50,12 +50,12 @@ class DetailViewController: UIViewController {
         }
     }
     
-    
+
     // MARK: - Methods
     
     override func viewDidLoad() {
-        pauseButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.pause, target: self, action: #selector(pausePlayTapped(_:)))
-        playButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.play, target: self, action: #selector(pausePlayTapped(_:)))
+        pauseButton = UIBarButtonItem(barButtonSystemItem: .pause, target: self, action: #selector(pausePlayTapped(_:)))
+        playButton = UIBarButtonItem(barButtonSystemItem: .play, target: self, action: #selector(pausePlayTapped(_:)))
         openButton = UIBarButtonItem(title: "Open", style: .plain, target: self, action: #selector(openMovieUrl))
         navigationItem.setRightBarButton(openButton, animated: false)
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(userTapped)))
@@ -63,7 +63,7 @@ class DetailViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         movieImageView.image = movie.image
-        episodeLabel.text = "Episode \(movie.episodeNumber)"
+        episodeLabel.text = "Episode: \(movie.episodeNumber)"
         titleLabel.text = movie.title
         yearLabel.text = "\(movie.releaseYear)"
         crawlLabel.text = movie.openingCrawlText
