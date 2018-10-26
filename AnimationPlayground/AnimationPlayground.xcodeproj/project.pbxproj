@@ -20,6 +20,7 @@
 		71CB5B772181A01000710AC1 /* starWarsIntroMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 71CB5B762181A01000710AC1 /* starWarsIntroMusic.mp3 */; };
 		71F7ED912181899400B82E11 /* MovieOverviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F7ED902181899400B82E11 /* MovieOverviewCell.swift */; };
 		B0FBA4BE218265CD00DB7EDD /* MovieCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FBA4BD218265CD00DB7EDD /* MovieCollectionCell.swift */; };
+		B0FBA4C02182A09900DB7EDD /* MovieCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FBA4BF2182A09900DB7EDD /* MovieCollectionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		71CB5B762181A01000710AC1 /* starWarsIntroMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = starWarsIntroMusic.mp3; sourceTree = "<group>"; };
 		71F7ED902181899400B82E11 /* MovieOverviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieOverviewCell.swift; sourceTree = "<group>"; };
 		B0FBA4BD218265CD00DB7EDD /* MovieCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionCell.swift; sourceTree = "<group>"; };
+		B0FBA4BF2182A09900DB7EDD /* MovieCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				7183F84021817DB100EB0D27 /* AppDelegate.swift */,
 				7183F84221817DB100EB0D27 /* MasterViewController.swift */,
 				7183F84421817DB100EB0D27 /* DetailViewController.swift */,
+				B0FBA4BF2182A09900DB7EDD /* MovieCollectionController.swift */,
 				7183F87021817E5800EB0D27 /* StarWarsMovie.swift */,
 				7183F87221817EDB00EB0D27 /* DataController.swift */,
 				71F7ED902181899400B82E11 /* MovieOverviewCell.swift */,
@@ -285,6 +288,7 @@
 			files = (
 				71F7ED912181899400B82E11 /* MovieOverviewCell.swift in Sources */,
 				7183F87321817EDB00EB0D27 /* DataController.swift in Sources */,
+				B0FBA4C02182A09900DB7EDD /* MovieCollectionController.swift in Sources */,
 				7183F84521817DB100EB0D27 /* DetailViewController.swift in Sources */,
 				B0FBA4BE218265CD00DB7EDD /* MovieCollectionCell.swift in Sources */,
 				7183F87121817E5800EB0D27 /* StarWarsMovie.swift in Sources */,
