@@ -12,7 +12,14 @@ class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
     let movies = DataController.shared.starWarsMovies
+    let transitionAnimator = TransitionAnimator()
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        transitionAnimator.dismissCompletion = {
+            print("Complete!")
+        }
+    }
 
     // MARK: - Segues
 
@@ -72,12 +79,15 @@ extension MasterViewController {
 extension MasterViewController: UIViewControllerTransitioningDelegate {
     
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return TransitionAnimator(isPresenting: true)
+        transitionAnimator.isPresenting = true
+        let selectedCell = tableView.cellForRow(at: tableView.indexPathForSelectedRow!)!
+        transitionAnimator.originFrame = self.view.convert(selectedCell.frame, to: nil)
+        return transitionAnimator
     }
     
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return nil
-//        return TransitionAnimator(isPresenting: false)
+        transitionAnimator.isPresenting = false
+        return transitionAnimator
     }
     
 }
