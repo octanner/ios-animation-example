@@ -21,6 +21,54 @@
 		71CB5B7A2181A31900710AC1 /* DetailViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB5B792181A31900710AC1 /* DetailViewControllerExtension.swift */; };
 		71F7ED912181899400B82E11 /* MovieOverviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F7ED902181899400B82E11 /* MovieOverviewCell.swift */; };
 		A1CDD0722182388A0098E780 /* TransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD0712182388A0098E780 /* TransitionAnimator.swift */; };
+		A1CDD0AB218396EB0098E780 /* HeroTransition+Interactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD075218396EA0098E780 /* HeroTransition+Interactive.swift */; };
+		A1CDD0AC218396EB0098E780 /* HeroProgressRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD076218396EA0098E780 /* HeroProgressRunner.swift */; };
+		A1CDD0AD218396EB0098E780 /* HeroTransitionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD077218396EA0098E780 /* HeroTransitionState.swift */; };
+		A1CDD0AE218396EB0098E780 /* HeroTransition+Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD078218396EA0098E780 /* HeroTransition+Start.swift */; };
+		A1CDD0AF218396EB0098E780 /* HeroTransition+CustomTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD079218396EA0098E780 /* HeroTransition+CustomTransition.swift */; };
+		A1CDD0B0218396EB0098E780 /* HeroTransition+Complete.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD07A218396EA0098E780 /* HeroTransition+Complete.swift */; };
+		A1CDD0B1218396EB0098E780 /* HeroTransition+Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD07B218396EA0098E780 /* HeroTransition+Animate.swift */; };
+		A1CDD0B2218396EB0098E780 /* HeroTransition+UITabBarControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD07C218396EA0098E780 /* HeroTransition+UITabBarControllerDelegate.swift */; };
+		A1CDD0B3218396EB0098E780 /* HeroTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD07D218396EA0098E780 /* HeroTransition.swift */; };
+		A1CDD0B4218396EB0098E780 /* HeroTransition+UINavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD07E218396EA0098E780 /* HeroTransition+UINavigationControllerDelegate.swift */; };
+		A1CDD0B5218396EB0098E780 /* HeroTransition+UIViewControllerTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD07F218396EA0098E780 /* HeroTransition+UIViewControllerTransitioningDelegate.swift */; };
+		A1CDD0B6218396EB0098E780 /* CALayer+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD081218396EA0098E780 /* CALayer+Hero.swift */; };
+		A1CDD0B7218396EB0098E780 /* Array+HeroModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD082218396EA0098E780 /* Array+HeroModifier.swift */; };
+		A1CDD0B8218396EB0098E780 /* CG+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD083218396EA0098E780 /* CG+Hero.swift */; };
+		A1CDD0B9218396EB0098E780 /* DispatchQueue+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD084218396EA0098E780 /* DispatchQueue+Hero.swift */; };
+		A1CDD0BA218396EB0098E780 /* UIView+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD085218396EA0098E780 /* UIView+Hero.swift */; };
+		A1CDD0BB218396EB0098E780 /* UIKit+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD086218396EA0098E780 /* UIKit+Hero.swift */; };
+		A1CDD0BC218396EB0098E780 /* UIViewController+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD087218396EA0098E780 /* UIViewController+Hero.swift */; };
+		A1CDD0BD218396EB0098E780 /* CAMediaTimingFunction+Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD088218396EA0098E780 /* CAMediaTimingFunction+Hero.swift */; };
+		A1CDD0BE218396EB0098E780 /* HeroPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD089218396EA0098E780 /* HeroPlugin.swift */; };
+		A1CDD0BF218396EB0098E780 /* HeroContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD08B218396EA0098E780 /* HeroContext.swift */; };
+		A1CDD0C0218396EB0098E780 /* HeroDebugPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD08D218396EA0098E780 /* HeroDebugPlugin.swift */; };
+		A1CDD0C1218396EB0098E780 /* HeroDebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD08E218396EA0098E780 /* HeroDebugView.swift */; };
+		A1CDD0C2218396EB0098E780 /* HeroTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD08F218396EA0098E780 /* HeroTypes.swift */; };
+		A1CDD0C3218396EB0098E780 /* HeroTargetState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD090218396EA0098E780 /* HeroTargetState.swift */; };
+		A1CDD0C4218396EB0098E780 /* HeroModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD091218396EB0098E780 /* HeroModifier.swift */; };
+		A1CDD0C5218396EB0098E780 /* HeroModifier+HeroStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD092218396EB0098E780 /* HeroModifier+HeroStringConvertible.swift */; };
+		A1CDD0C6218396EB0098E780 /* HeroCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD093218396EB0098E780 /* HeroCompatible.swift */; };
+		A1CDD0C7218396EB0098E780 /* HeroCoreAnimationViewContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD095218396EB0098E780 /* HeroCoreAnimationViewContext.swift */; };
+		A1CDD0C8218396EB0098E780 /* HeroViewPropertyViewContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD096218396EB0098E780 /* HeroViewPropertyViewContext.swift */; };
+		A1CDD0C9218396EB0098E780 /* HeroDefaultAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD097218396EB0098E780 /* HeroDefaultAnimator.swift */; };
+		A1CDD0CA218396EB0098E780 /* HeroAnimatorViewContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD098218396EB0098E780 /* HeroAnimatorViewContext.swift */; };
+		A1CDD0CB218396EB0098E780 /* HeroViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD099218396EB0098E780 /* HeroViewControllerDelegate.swift */; };
+		A1CDD0CC218396EB0098E780 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1CDD09A218396EB0098E780 /* Info.plist */; };
+		A1CDD0CD218396EB0098E780 /* HeroModifier+Advanced.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD09B218396EB0098E780 /* HeroModifier+Advanced.swift */; };
+		A1CDD0CE218396EB0098E780 /* Lexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD09D218396EB0098E780 /* Lexer.swift */; };
+		A1CDD0CF218396EB0098E780 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD09E218396EB0098E780 /* Regex.swift */; };
+		A1CDD0D0218396EB0098E780 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD09F218396EB0098E780 /* Parser.swift */; };
+		A1CDD0D1218396EB0098E780 /* Nodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD0A0218396EB0098E780 /* Nodes.swift */; };
+		A1CDD0D2218396EB0098E780 /* HeroStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD0A1218396EB0098E780 /* HeroStringConvertible.swift */; };
+		A1CDD0D3218396EB0098E780 /* MatchPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD0A3218396EB0098E780 /* MatchPreprocessor.swift */; };
+		A1CDD0D4218396EB0098E780 /* BasePreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD0A4218396EB0098E780 /* BasePreprocessor.swift */; };
+		A1CDD0D5218396EB0098E780 /* CascadePreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD0A5218396EB0098E780 /* CascadePreprocessor.swift */; };
+		A1CDD0D6218396EB0098E780 /* IgnoreSubviewModifiersPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD0A6218396EB0098E780 /* IgnoreSubviewModifiersPreprocessor.swift */; };
+		A1CDD0D7218396EB0098E780 /* ConditionalPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD0A7218396EB0098E780 /* ConditionalPreprocessor.swift */; };
+		A1CDD0D8218396EB0098E780 /* DefaultAnimationPreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD0A8218396EB0098E780 /* DefaultAnimationPreprocessor.swift */; };
+		A1CDD0D9218396EB0098E780 /* SourcePreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD0A9218396EB0098E780 /* SourcePreprocessor.swift */; };
+		A1CDD0DA218396EB0098E780 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CDD0AA218396EB0098E780 /* SwiftSupport.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +109,55 @@
 		71CB5B792181A31900710AC1 /* DetailViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerExtension.swift; sourceTree = "<group>"; };
 		71F7ED902181899400B82E11 /* MovieOverviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieOverviewCell.swift; sourceTree = "<group>"; };
 		A1CDD0712182388A0098E780 /* TransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAnimator.swift; sourceTree = "<group>"; };
+		A1CDD075218396EA0098E780 /* HeroTransition+Interactive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HeroTransition+Interactive.swift"; sourceTree = "<group>"; };
+		A1CDD076218396EA0098E780 /* HeroProgressRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroProgressRunner.swift; sourceTree = "<group>"; };
+		A1CDD077218396EA0098E780 /* HeroTransitionState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroTransitionState.swift; sourceTree = "<group>"; };
+		A1CDD078218396EA0098E780 /* HeroTransition+Start.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HeroTransition+Start.swift"; sourceTree = "<group>"; };
+		A1CDD079218396EA0098E780 /* HeroTransition+CustomTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HeroTransition+CustomTransition.swift"; sourceTree = "<group>"; };
+		A1CDD07A218396EA0098E780 /* HeroTransition+Complete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HeroTransition+Complete.swift"; sourceTree = "<group>"; };
+		A1CDD07B218396EA0098E780 /* HeroTransition+Animate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HeroTransition+Animate.swift"; sourceTree = "<group>"; };
+		A1CDD07C218396EA0098E780 /* HeroTransition+UITabBarControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HeroTransition+UITabBarControllerDelegate.swift"; sourceTree = "<group>"; };
+		A1CDD07D218396EA0098E780 /* HeroTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroTransition.swift; sourceTree = "<group>"; };
+		A1CDD07E218396EA0098E780 /* HeroTransition+UINavigationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HeroTransition+UINavigationControllerDelegate.swift"; sourceTree = "<group>"; };
+		A1CDD07F218396EA0098E780 /* HeroTransition+UIViewControllerTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HeroTransition+UIViewControllerTransitioningDelegate.swift"; sourceTree = "<group>"; };
+		A1CDD081218396EA0098E780 /* CALayer+Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+Hero.swift"; sourceTree = "<group>"; };
+		A1CDD082218396EA0098E780 /* Array+HeroModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+HeroModifier.swift"; sourceTree = "<group>"; };
+		A1CDD083218396EA0098E780 /* CG+Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CG+Hero.swift"; sourceTree = "<group>"; };
+		A1CDD084218396EA0098E780 /* DispatchQueue+Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Hero.swift"; sourceTree = "<group>"; };
+		A1CDD085218396EA0098E780 /* UIView+Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Hero.swift"; sourceTree = "<group>"; };
+		A1CDD086218396EA0098E780 /* UIKit+Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit+Hero.swift"; sourceTree = "<group>"; };
+		A1CDD087218396EA0098E780 /* UIViewController+Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Hero.swift"; sourceTree = "<group>"; };
+		A1CDD088218396EA0098E780 /* CAMediaTimingFunction+Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAMediaTimingFunction+Hero.swift"; sourceTree = "<group>"; };
+		A1CDD089218396EA0098E780 /* HeroPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroPlugin.swift; sourceTree = "<group>"; };
+		A1CDD08A218396EA0098E780 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
+		A1CDD08B218396EA0098E780 /* HeroContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroContext.swift; sourceTree = "<group>"; };
+		A1CDD08D218396EA0098E780 /* HeroDebugPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroDebugPlugin.swift; sourceTree = "<group>"; };
+		A1CDD08E218396EA0098E780 /* HeroDebugView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroDebugView.swift; sourceTree = "<group>"; };
+		A1CDD08F218396EA0098E780 /* HeroTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroTypes.swift; sourceTree = "<group>"; };
+		A1CDD090218396EA0098E780 /* HeroTargetState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroTargetState.swift; sourceTree = "<group>"; };
+		A1CDD091218396EB0098E780 /* HeroModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroModifier.swift; sourceTree = "<group>"; };
+		A1CDD092218396EB0098E780 /* HeroModifier+HeroStringConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HeroModifier+HeroStringConvertible.swift"; sourceTree = "<group>"; };
+		A1CDD093218396EB0098E780 /* HeroCompatible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroCompatible.swift; sourceTree = "<group>"; };
+		A1CDD095218396EB0098E780 /* HeroCoreAnimationViewContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroCoreAnimationViewContext.swift; sourceTree = "<group>"; };
+		A1CDD096218396EB0098E780 /* HeroViewPropertyViewContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroViewPropertyViewContext.swift; sourceTree = "<group>"; };
+		A1CDD097218396EB0098E780 /* HeroDefaultAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroDefaultAnimator.swift; sourceTree = "<group>"; };
+		A1CDD098218396EB0098E780 /* HeroAnimatorViewContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroAnimatorViewContext.swift; sourceTree = "<group>"; };
+		A1CDD099218396EB0098E780 /* HeroViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroViewControllerDelegate.swift; sourceTree = "<group>"; };
+		A1CDD09A218396EB0098E780 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1CDD09B218396EB0098E780 /* HeroModifier+Advanced.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HeroModifier+Advanced.swift"; sourceTree = "<group>"; };
+		A1CDD09D218396EB0098E780 /* Lexer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lexer.swift; sourceTree = "<group>"; };
+		A1CDD09E218396EB0098E780 /* Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
+		A1CDD09F218396EB0098E780 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		A1CDD0A0218396EB0098E780 /* Nodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nodes.swift; sourceTree = "<group>"; };
+		A1CDD0A1218396EB0098E780 /* HeroStringConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroStringConvertible.swift; sourceTree = "<group>"; };
+		A1CDD0A3218396EB0098E780 /* MatchPreprocessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchPreprocessor.swift; sourceTree = "<group>"; };
+		A1CDD0A4218396EB0098E780 /* BasePreprocessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePreprocessor.swift; sourceTree = "<group>"; };
+		A1CDD0A5218396EB0098E780 /* CascadePreprocessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CascadePreprocessor.swift; sourceTree = "<group>"; };
+		A1CDD0A6218396EB0098E780 /* IgnoreSubviewModifiersPreprocessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IgnoreSubviewModifiersPreprocessor.swift; sourceTree = "<group>"; };
+		A1CDD0A7218396EB0098E780 /* ConditionalPreprocessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConditionalPreprocessor.swift; sourceTree = "<group>"; };
+		A1CDD0A8218396EB0098E780 /* DefaultAnimationPreprocessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultAnimationPreprocessor.swift; sourceTree = "<group>"; };
+		A1CDD0A9218396EB0098E780 /* SourcePreprocessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourcePreprocessor.swift; sourceTree = "<group>"; };
+		A1CDD0AA218396EB0098E780 /* SwiftSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSupport.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +220,7 @@
 				7183F84E21817DB400EB0D27 /* Info.plist */,
 				71F7ED902181899400B82E11 /* MovieOverviewCell.swift */,
 				A1CDD0712182388A0098E780 /* TransitionAnimator.swift */,
+				A1CDD073218396D20098E780 /* Hero */,
 			);
 			path = AnimationPlayground;
 			sourceTree = "<group>";
@@ -152,6 +250,110 @@
 				71CB5B762181A01000710AC1 /* starWarsIntroMusic.mp3 */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		A1CDD073218396D20098E780 /* Hero */ = {
+			isa = PBXGroup;
+			children = (
+				A1CDD094218396EB0098E780 /* Animator */,
+				A1CDD08C218396EA0098E780 /* Debug Plugin */,
+				A1CDD080218396EA0098E780 /* Extensions */,
+				A1CDD08A218396EA0098E780 /* Hero.h */,
+				A1CDD093218396EB0098E780 /* HeroCompatible.swift */,
+				A1CDD08B218396EA0098E780 /* HeroContext.swift */,
+				A1CDD091218396EB0098E780 /* HeroModifier.swift */,
+				A1CDD09B218396EB0098E780 /* HeroModifier+Advanced.swift */,
+				A1CDD092218396EB0098E780 /* HeroModifier+HeroStringConvertible.swift */,
+				A1CDD089218396EA0098E780 /* HeroPlugin.swift */,
+				A1CDD090218396EA0098E780 /* HeroTargetState.swift */,
+				A1CDD08F218396EA0098E780 /* HeroTypes.swift */,
+				A1CDD099218396EB0098E780 /* HeroViewControllerDelegate.swift */,
+				A1CDD09A218396EB0098E780 /* Info.plist */,
+				A1CDD09C218396EB0098E780 /* Parser */,
+				A1CDD0A2218396EB0098E780 /* Preprocessors */,
+				A1CDD0AA218396EB0098E780 /* SwiftSupport.swift */,
+				A1CDD074218396EA0098E780 /* Transition */,
+			);
+			path = Hero;
+			sourceTree = "<group>";
+		};
+		A1CDD074218396EA0098E780 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				A1CDD075218396EA0098E780 /* HeroTransition+Interactive.swift */,
+				A1CDD076218396EA0098E780 /* HeroProgressRunner.swift */,
+				A1CDD077218396EA0098E780 /* HeroTransitionState.swift */,
+				A1CDD078218396EA0098E780 /* HeroTransition+Start.swift */,
+				A1CDD079218396EA0098E780 /* HeroTransition+CustomTransition.swift */,
+				A1CDD07A218396EA0098E780 /* HeroTransition+Complete.swift */,
+				A1CDD07B218396EA0098E780 /* HeroTransition+Animate.swift */,
+				A1CDD07C218396EA0098E780 /* HeroTransition+UITabBarControllerDelegate.swift */,
+				A1CDD07D218396EA0098E780 /* HeroTransition.swift */,
+				A1CDD07E218396EA0098E780 /* HeroTransition+UINavigationControllerDelegate.swift */,
+				A1CDD07F218396EA0098E780 /* HeroTransition+UIViewControllerTransitioningDelegate.swift */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		A1CDD080218396EA0098E780 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A1CDD081218396EA0098E780 /* CALayer+Hero.swift */,
+				A1CDD082218396EA0098E780 /* Array+HeroModifier.swift */,
+				A1CDD083218396EA0098E780 /* CG+Hero.swift */,
+				A1CDD084218396EA0098E780 /* DispatchQueue+Hero.swift */,
+				A1CDD085218396EA0098E780 /* UIView+Hero.swift */,
+				A1CDD086218396EA0098E780 /* UIKit+Hero.swift */,
+				A1CDD087218396EA0098E780 /* UIViewController+Hero.swift */,
+				A1CDD088218396EA0098E780 /* CAMediaTimingFunction+Hero.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A1CDD08C218396EA0098E780 /* Debug Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				A1CDD08D218396EA0098E780 /* HeroDebugPlugin.swift */,
+				A1CDD08E218396EA0098E780 /* HeroDebugView.swift */,
+			);
+			path = "Debug Plugin";
+			sourceTree = "<group>";
+		};
+		A1CDD094218396EB0098E780 /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				A1CDD095218396EB0098E780 /* HeroCoreAnimationViewContext.swift */,
+				A1CDD096218396EB0098E780 /* HeroViewPropertyViewContext.swift */,
+				A1CDD097218396EB0098E780 /* HeroDefaultAnimator.swift */,
+				A1CDD098218396EB0098E780 /* HeroAnimatorViewContext.swift */,
+			);
+			path = Animator;
+			sourceTree = "<group>";
+		};
+		A1CDD09C218396EB0098E780 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				A1CDD09D218396EB0098E780 /* Lexer.swift */,
+				A1CDD09E218396EB0098E780 /* Regex.swift */,
+				A1CDD09F218396EB0098E780 /* Parser.swift */,
+				A1CDD0A0218396EB0098E780 /* Nodes.swift */,
+				A1CDD0A1218396EB0098E780 /* HeroStringConvertible.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		A1CDD0A2218396EB0098E780 /* Preprocessors */ = {
+			isa = PBXGroup;
+			children = (
+				A1CDD0A3218396EB0098E780 /* MatchPreprocessor.swift */,
+				A1CDD0A4218396EB0098E780 /* BasePreprocessor.swift */,
+				A1CDD0A5218396EB0098E780 /* CascadePreprocessor.swift */,
+				A1CDD0A6218396EB0098E780 /* IgnoreSubviewModifiersPreprocessor.swift */,
+				A1CDD0A7218396EB0098E780 /* ConditionalPreprocessor.swift */,
+				A1CDD0A8218396EB0098E780 /* DefaultAnimationPreprocessor.swift */,
+				A1CDD0A9218396EB0098E780 /* SourcePreprocessor.swift */,
+			);
+			path = Preprocessors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +463,7 @@
 				7183F84D21817DB400EB0D27 /* LaunchScreen.storyboard in Resources */,
 				71CB5B772181A01000710AC1 /* starWarsIntroMusic.mp3 in Resources */,
 				7183F84A21817DB400EB0D27 /* Assets.xcassets in Resources */,
+				A1CDD0CC218396EB0098E780 /* Info.plist in Resources */,
 				7183F84821817DB100EB0D27 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,14 +489,61 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1CDD0BB218396EB0098E780 /* UIKit+Hero.swift in Sources */,
+				A1CDD0B7218396EB0098E780 /* Array+HeroModifier.swift in Sources */,
+				A1CDD0AB218396EB0098E780 /* HeroTransition+Interactive.swift in Sources */,
 				71F7ED912181899400B82E11 /* MovieOverviewCell.swift in Sources */,
+				A1CDD0C0218396EB0098E780 /* HeroDebugPlugin.swift in Sources */,
+				A1CDD0B3218396EB0098E780 /* HeroTransition.swift in Sources */,
+				A1CDD0D3218396EB0098E780 /* MatchPreprocessor.swift in Sources */,
+				A1CDD0CB218396EB0098E780 /* HeroViewControllerDelegate.swift in Sources */,
+				A1CDD0B4218396EB0098E780 /* HeroTransition+UINavigationControllerDelegate.swift in Sources */,
+				A1CDD0AC218396EB0098E780 /* HeroProgressRunner.swift in Sources */,
+				A1CDD0D8218396EB0098E780 /* DefaultAnimationPreprocessor.swift in Sources */,
+				A1CDD0AE218396EB0098E780 /* HeroTransition+Start.swift in Sources */,
+				A1CDD0C6218396EB0098E780 /* HeroCompatible.swift in Sources */,
+				A1CDD0C8218396EB0098E780 /* HeroViewPropertyViewContext.swift in Sources */,
+				A1CDD0D5218396EB0098E780 /* CascadePreprocessor.swift in Sources */,
 				A1CDD0722182388A0098E780 /* TransitionAnimator.swift in Sources */,
+				A1CDD0BD218396EB0098E780 /* CAMediaTimingFunction+Hero.swift in Sources */,
+				A1CDD0D6218396EB0098E780 /* IgnoreSubviewModifiersPreprocessor.swift in Sources */,
+				A1CDD0C5218396EB0098E780 /* HeroModifier+HeroStringConvertible.swift in Sources */,
+				A1CDD0B0218396EB0098E780 /* HeroTransition+Complete.swift in Sources */,
+				A1CDD0CD218396EB0098E780 /* HeroModifier+Advanced.swift in Sources */,
+				A1CDD0BC218396EB0098E780 /* UIViewController+Hero.swift in Sources */,
+				A1CDD0C2218396EB0098E780 /* HeroTypes.swift in Sources */,
+				A1CDD0BF218396EB0098E780 /* HeroContext.swift in Sources */,
+				A1CDD0C3218396EB0098E780 /* HeroTargetState.swift in Sources */,
+				A1CDD0CF218396EB0098E780 /* Regex.swift in Sources */,
 				7183F87321817EDB00EB0D27 /* DataController.swift in Sources */,
+				A1CDD0B2218396EB0098E780 /* HeroTransition+UITabBarControllerDelegate.swift in Sources */,
+				A1CDD0D7218396EB0098E780 /* ConditionalPreprocessor.swift in Sources */,
 				71CB5B7A2181A31900710AC1 /* DetailViewControllerExtension.swift in Sources */,
+				A1CDD0D1218396EB0098E780 /* Nodes.swift in Sources */,
 				7183F84521817DB100EB0D27 /* DetailViewController.swift in Sources */,
+				A1CDD0BE218396EB0098E780 /* HeroPlugin.swift in Sources */,
+				A1CDD0D9218396EB0098E780 /* SourcePreprocessor.swift in Sources */,
+				A1CDD0B1218396EB0098E780 /* HeroTransition+Animate.swift in Sources */,
+				A1CDD0CA218396EB0098E780 /* HeroAnimatorViewContext.swift in Sources */,
+				A1CDD0C1218396EB0098E780 /* HeroDebugView.swift in Sources */,
+				A1CDD0D4218396EB0098E780 /* BasePreprocessor.swift in Sources */,
+				A1CDD0C7218396EB0098E780 /* HeroCoreAnimationViewContext.swift in Sources */,
+				A1CDD0BA218396EB0098E780 /* UIView+Hero.swift in Sources */,
+				A1CDD0D0218396EB0098E780 /* Parser.swift in Sources */,
+				A1CDD0DA218396EB0098E780 /* SwiftSupport.swift in Sources */,
+				A1CDD0AF218396EB0098E780 /* HeroTransition+CustomTransition.swift in Sources */,
 				7183F87121817E5800EB0D27 /* StarWarsMovie.swift in Sources */,
+				A1CDD0C9218396EB0098E780 /* HeroDefaultAnimator.swift in Sources */,
+				A1CDD0C4218396EB0098E780 /* HeroModifier.swift in Sources */,
+				A1CDD0B5218396EB0098E780 /* HeroTransition+UIViewControllerTransitioningDelegate.swift in Sources */,
+				A1CDD0CE218396EB0098E780 /* Lexer.swift in Sources */,
+				A1CDD0AD218396EB0098E780 /* HeroTransitionState.swift in Sources */,
 				7183F84321817DB100EB0D27 /* MasterViewController.swift in Sources */,
+				A1CDD0B9218396EB0098E780 /* DispatchQueue+Hero.swift in Sources */,
 				7183F84121817DB100EB0D27 /* AppDelegate.swift in Sources */,
+				A1CDD0D2218396EB0098E780 /* HeroStringConvertible.swift in Sources */,
+				A1CDD0B6218396EB0098E780 /* CALayer+Hero.swift in Sources */,
+				A1CDD0B8218396EB0098E780 /* CG+Hero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
