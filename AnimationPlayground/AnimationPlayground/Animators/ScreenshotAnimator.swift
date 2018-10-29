@@ -43,9 +43,10 @@ class ScreenshotAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         // setup utility variables
         let fromFrames = views.map { containerView.convert($0.from.frame, from: $0.from.superview) }
         let toFrames = views.map { containerView.convert($0.to.frame, from: $0.to.superview) }
-        let tempViews = views.map { $0.from.snapshotView(afterScreenUpdates: true)! }
+        let tempViews = views.map { $0.from.snapshotView(afterScreenUpdates: false)! }
         let fromAlphas = views.map { $0.from.alpha }
-        
+        let toAlphas = views.map { $0.to.alpha }
+
         // add views to the containerView
         containerView.addSubview(toView)
         toView.alpha = 0
@@ -55,7 +56,7 @@ class ScreenshotAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         backgroundView.frame = toView.frame//.inset(by: toView.safeAreaInsets)
 
         // take screenshots
-        views.forEach { $0.from.alpha = 0 }
+        views.forEach { $0.from.alpha = 0; $0.to.alpha = 0 }
         let fromViewScreenshot = fromView.snapshotView(afterScreenUpdates: true)!
         fromView.layoutIfNeeded()
         toView.layoutIfNeeded()
@@ -68,7 +69,7 @@ class ScreenshotAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         
         // setup screenshot views' frames
         for (index, tempView) in tempViews.enumerated() {
-            backgroundView.addSubview(tempView)
+            containerView.addSubview(tempView)
             tempView.frame = fromFrames[index]
         }
         
@@ -81,6 +82,7 @@ class ScreenshotAnimator: NSObject, UIViewControllerAnimatedTransitioning {
             backgroundView.alpha = 0
             for (index, tempView) in tempViews.enumerated() {
                 tempView.frame = toFrames[index]
+                tempView.alpha = toAlphas[index]
             }
             toView.alpha = 1
             fromViewScreenshot.alpha = 0
@@ -90,7 +92,7 @@ class ScreenshotAnimator: NSObject, UIViewControllerAnimatedTransitioning {
             // MARK: CLEANUP
             
             // remove unused views
-//            tempViews.forEach({ $0.removeFromSuperview() })
+            tempViews.forEach({ $0.removeFromSuperview() })
 
             fromViewScreenshot.removeFromSuperview()
             backgroundView.removeFromSuperview()
@@ -98,6 +100,7 @@ class ScreenshotAnimator: NSObject, UIViewControllerAnimatedTransitioning {
             // reset fromView's alphas
             for (index, tuple) in self.views.enumerated() {
                 tuple.from.alpha = fromAlphas[index]
+                tuple.to.alpha = toAlphas[index]
             }
             
             // complete
