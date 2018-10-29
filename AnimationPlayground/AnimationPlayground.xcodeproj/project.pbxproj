@@ -17,6 +17,8 @@
 		7183F86321817DB400EB0D27 /* AnimationPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7183F86221817DB400EB0D27 /* AnimationPlaygroundUITests.swift */; };
 		7183F87121817E5800EB0D27 /* StarWarsMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7183F87021817E5800EB0D27 /* StarWarsMovie.swift */; };
 		7183F87321817EDB00EB0D27 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7183F87221817EDB00EB0D27 /* DataController.swift */; };
+		71858AD4218796D000566470 /* ScreenshotAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71858AD3218796CF00566470 /* ScreenshotAnimator.swift */; };
+		71858AD7218796E900566470 /* AnimationStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71858AD6218796E900566470 /* AnimationStructures.swift */; };
 		71CB5B772181A01000710AC1 /* starWarsIntroMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 71CB5B762181A01000710AC1 /* starWarsIntroMusic.mp3 */; };
 		71CB5B7A2181A31900710AC1 /* DetailViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB5B792181A31900710AC1 /* DetailViewControllerExtension.swift */; };
 		71CB5B7C218269C800710AC1 /* TrailersCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB5B7B218269C800710AC1 /* TrailersCollectionViewController.swift */; };
@@ -67,6 +69,8 @@
 		7183F86421817DB400EB0D27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7183F87021817E5800EB0D27 /* StarWarsMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsMovie.swift; sourceTree = "<group>"; };
 		7183F87221817EDB00EB0D27 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		71858AD3218796CF00566470 /* ScreenshotAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotAnimator.swift; sourceTree = "<group>"; };
+		71858AD6218796E900566470 /* AnimationStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationStructures.swift; sourceTree = "<group>"; };
 		71CB5B762181A01000710AC1 /* starWarsIntroMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = starWarsIntroMusic.mp3; sourceTree = "<group>"; };
 		71CB5B792181A31900710AC1 /* DetailViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerExtension.swift; sourceTree = "<group>"; };
 		71CB5B7B218269C800710AC1 /* TrailersCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailersCollectionViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +137,7 @@
 			children = (
 				7183F84021817DB100EB0D27 /* AppDelegate.swift */,
 				7183F84221817DB100EB0D27 /* MasterViewController.swift */,
+				71858AD5218796D700566470 /* Animators */,
 				7183F84421817DB100EB0D27 /* DetailViewController.swift */,
 				71CB5B7B218269C800710AC1 /* TrailersCollectionViewController.swift */,
 				71CB5B842182CB2F00710AC1 /* TrailerCollectionViewCell.swift */,
@@ -167,6 +172,15 @@
 				7183F86421817DB400EB0D27 /* Info.plist */,
 			);
 			path = AnimationPlaygroundUITests;
+			sourceTree = "<group>";
+		};
+		71858AD5218796D700566470 /* Animators */ = {
+			isa = PBXGroup;
+			children = (
+				71858AD3218796CF00566470 /* ScreenshotAnimator.swift */,
+				71858AD6218796E900566470 /* AnimationStructures.swift */,
+			);
+			path = Animators;
 			sourceTree = "<group>";
 		};
 		71CB5B782181A01500710AC1 /* Assets */ = {
@@ -332,9 +346,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71858AD4218796D000566470 /* ScreenshotAnimator.swift in Sources */,
 				71F7ED912181899400B82E11 /* MovieOverviewCell.swift in Sources */,
 				7183F87321817EDB00EB0D27 /* DataController.swift in Sources */,
 				71CB5B862182CB2F00710AC1 /* TrailerCollectionViewCell.swift in Sources */,
+				71858AD7218796E900566470 /* AnimationStructures.swift in Sources */,
 				71CB5B7C218269C800710AC1 /* TrailersCollectionViewController.swift in Sources */,
 				71CB5B7F21826A9300710AC1 /* VideoPlayerViewController.swift in Sources */,
 				71CB5B7A2181A31900710AC1 /* DetailViewControllerExtension.swift in Sources */,
@@ -517,7 +533,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P25YZ8RHNL;
+				DEVELOPMENT_TEAM = 9D3AY7C5NW;
 				INFOPLIST_FILE = AnimationPlayground/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -535,7 +551,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P25YZ8RHNL;
+				DEVELOPMENT_TEAM = 9D3AY7C5NW;
 				INFOPLIST_FILE = AnimationPlayground/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

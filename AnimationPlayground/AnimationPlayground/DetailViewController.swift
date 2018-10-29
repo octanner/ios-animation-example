@@ -9,8 +9,12 @@
 import UIKit
 import AVKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, Transitionable {
 
+    lazy var viewsToTransition: [TransitioningElements : UIView] = {
+        return [ .label: episodeLabel, .imageView: movieImageView]
+    }()
+    
     // MARK: - Outlets
     
     @IBOutlet weak var movieImageView: UIImageView!
@@ -30,7 +34,7 @@ class DetailViewController: UIViewController {
     internal var allAnimations = [UIViewPropertyAnimator]()
     internal var player: AVAudioPlayer!
     /// set this variable to false if the beauty is too much for you...
-    private let shouldDoDelightfulAnimations = true
+    private let shouldDoDelightfulAnimations = false
     var playButton: UIBarButtonItem!
     var pauseButton: UIBarButtonItem!
     var openButton: UIBarButtonItem!
