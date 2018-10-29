@@ -9,11 +9,7 @@
 import UIKit
 import AVKit
 
-class DetailViewController: UIViewController, Transitionable {
-
-    lazy var viewsToTransition: [TransitioningElements : UIView] = {
-        return [ .label: episodeLabel, .imageView: movieImageView]
-    }()
+class DetailViewController: UIViewController{
     
     // MARK: - Outlets
     

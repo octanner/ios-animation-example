@@ -11,7 +11,17 @@ import UIKit
 
 class ScreenshotAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     
-    let views: [(from: UIView, to: UIView)]
+    var views: [(from: UIView, to: UIView)]
+
+    func updateViewsOrder(fromView: UIView, toView: UIView) {
+        guard let firstView = views.first else { return }
+        
+        if !fromView.contains(firstView.from) {
+            // `from` and `to` are backwards, switch them
+            views = views.map { (from: $0.to, to: $0.from) }
+            return
+        }
+    }
     
     init(views: [(from: UIView, to: UIView)]) {
         self.views = views
@@ -39,7 +49,9 @@ class ScreenshotAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         
         
         // MARK: SETUP
-        
+
+        updateViewsOrder(fromView: fromView, toView: toView)
+
         // setup utility variables
         let fromFrames = views.map { containerView.convert($0.from.frame, from: $0.from.superview) }
         let toFrames = views.map { containerView.convert($0.to.frame, from: $0.to.superview) }
@@ -108,4 +120,18 @@ class ScreenshotAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         }
     }
     
+}
+
+extension UIView {
+    
+    func contains(_ view: UIView) -> Bool {
+        for subview in subviews {
+            if subview == view {
+                return true
+            } else if subview.contains(view) {
+                return true
+            }
+        }
+        return false
+    }
 }
