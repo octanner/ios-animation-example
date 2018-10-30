@@ -61,11 +61,14 @@ class ScreenshotAnimator: NSObject, UIViewControllerAnimatedTransitioning {
 
         // add views to the containerView
         containerView.addSubview(toView)
+        toView.setNeedsLayout()
+        toView.layoutIfNeeded()
+        
         toView.alpha = 0
         let backgroundView = UIView(frame: toView.frame)
         backgroundView.backgroundColor = fromView.backgroundColor
         containerView.addSubview(backgroundView)
-        backgroundView.frame = toView.frame//.inset(by: toView.safeAreaInsets)
+        backgroundView.frame = toView.frame.inset(by: toView.safeAreaInsets)
 
         // take screenshots
         views.forEach { $0.from.alpha = 0; $0.to.alpha = 0 }
